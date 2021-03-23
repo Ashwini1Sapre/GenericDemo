@@ -13,7 +13,7 @@ struct LoadingView: View {
     var body: some View {
         VStack {
             
-            LottieView(filename: filename, time: loaderTime)
+            LottieView(filename: filename, time: "0.5")
                 .modifier(loaderframe())
             
             

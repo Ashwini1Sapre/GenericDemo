@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct CustumPofileImage: View {
     var profile: Profile = Profile(name: "Danny", subtitle: "Awesome iOS Developer", description: "Danny loves SwiftUI and thinks it's the future of iOS Development!", profilePic: "apple-logo")
@@ -14,10 +15,25 @@ struct CustumPofileImage: View {
     @State private var universalSearch = false
     @State private var serchETxt = ""
     
+    @State var text = ""
+    @State var showingAlert: Bool
+    
     var body: some View {
         VStack {
+             // CustumSearchBar
+            //for share your app
+         //   ActivityViewController(activityItem: [URL(string: "https://www.lokmat.com")!])
+            MapViewNew(showingAlert: $showingAlert)
+                .alert(isPresented: self.$showingAlert) { ()-> Alert  in
+                    
+                    
+                    return Alert(title: Text("IMP"), message: Text("Go To Tab it"), dismissButton: .default(Text("got it....")))
+                    
+                    
+                    
+                    
+                }
             
-           // CustumSearchBar
             
             
             VStack {
@@ -25,6 +41,15 @@ struct CustumPofileImage: View {
                 CustumSearchBarView(editing: $editing, text: $serchETxt, universalSearch:  $universalSearch, placeholderText: "Search Text")
                 ProfilePage(profile: profile)
                 ProfilePage(profile: profile2)
+                
+                
+                
+                
+                
+               // var center = mapView.centerCoordinate
+             //   MapView(coordinate:)
+                
+                
             ///////   custumSearchBarView
                 
             }
@@ -72,6 +97,6 @@ struct ProfilePage: View {
 
 struct CustumPofileImage_Previews: PreviewProvider {
     static var previews: some View {
-        CustumPofileImage()
+        CustumPofileImage(showingAlert: true)
     }
 }

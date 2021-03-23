@@ -41,6 +41,7 @@ struct LottieView: UIViewRepresentable {
         
         ])
         
+        
         return view
         
         
