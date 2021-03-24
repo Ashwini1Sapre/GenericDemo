@@ -13,10 +13,16 @@
 		6017BF64260A14C300966A32 /* MainTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6017BF63260A14C300966A32 /* MainTFView.swift */; };
 		601E1BD22608CA01009E063A /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601E1BD12608CA01009E063A /* ActivityViewController.swift */; };
 		601E1BD72608CE64009E063A /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601E1BD62608CE64009E063A /* BlurView.swift */; };
+		60250D7A260B3E5E0093854A /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60250D79260B3E5E0093854A /* RatingView.swift */; };
+		60250D80260B4B370093854A /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 60250D7F260B4B370093854A /* Charts */; };
+		60250D8D260B4F9E0093854A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60250D8C260B4F9E0093854A /* ButtonView.swift */; };
 		602CDC3D2608AFF3004B244F /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 602CDC3C2608AFF3004B244F /* Contents.json */; };
 		602CDC422608B07F004B244F /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 602CDC412608B07F004B244F /* countries.json */; };
 		602CDC4A2608B799004B244F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602CDC492608B799004B244F /* Profile.swift */; };
 		602CDC4F2608B94A004B244F /* CustumPofileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602CDC4E2608B94A004B244F /* CustumPofileImage.swift */; };
+		605D3DE7260B0B1F00C60FE7 /* CustomScrollViewNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605D3DE6260B0B1F00C60FE7 /* CustomScrollViewNew.swift */; };
+		605D3DF0260B160B00C60FE7 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605D3DEF260B160B00C60FE7 /* AlertController.swift */; };
+		605D3DFD260B3B2E00C60FE7 /* PieChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 605D3DFC260B3B2E00C60FE7 /* PieChartsView.swift */; };
 		606764EB2605D3A3006A13EE /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606764EA2605D3A3006A13EE /* ProtocolView.swift */; };
 		606764F02605DEEB006A13EE /* BsicDEmoGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606764EF2605DEEB006A13EE /* BsicDEmoGeneric.swift */; };
 		6073163A26046BF900DA9616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073163926046BF900DA9616 /* AppDelegate.swift */; };
@@ -28,7 +34,6 @@
 		6073165126046BFB00DA9616 /* GenericDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073165026046BFB00DA9616 /* GenericDemoTests.swift */; };
 		6073165C26046BFB00DA9616 /* GenericDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073165B26046BFB00DA9616 /* GenericDemoUITests.swift */; };
 		6073166D26046D5100DA9616 /* Modifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073166C26046D5100DA9616 /* Modifire.swift */; };
-		607316752604787100DA9616 /* ModifireNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607316742604787100DA9616 /* ModifireNew.swift */; };
 		607316842604B4D100DA9616 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 607316832604B4D100DA9616 /* Lottie */; };
 		607316892604B50C00DA9616 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607316882604B50C00DA9616 /* LottieView.swift */; };
 		6073168E2604B78900DA9616 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6073168D2604B78900DA9616 /* LoadingView.swift */; };
@@ -65,6 +70,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		60250D83260B4B6C0093854A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		6017BF4A260A045200966A32 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6017BF4F260A083600966A32 /* locationPin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locationPin@2x.png"; sourceTree = "<group>"; };
@@ -72,10 +90,15 @@
 		6017BF63260A14C300966A32 /* MainTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTFView.swift; sourceTree = "<group>"; };
 		601E1BD12608CA01009E063A /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		601E1BD62608CE64009E063A /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		60250D79260B3E5E0093854A /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		60250D8C260B4F9E0093854A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		602CDC3C2608AFF3004B244F /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		602CDC412608B07F004B244F /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		602CDC492608B799004B244F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		602CDC4E2608B94A004B244F /* CustumPofileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustumPofileImage.swift; sourceTree = "<group>"; };
+		605D3DE6260B0B1F00C60FE7 /* CustomScrollViewNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollViewNew.swift; sourceTree = "<group>"; };
+		605D3DEF260B160B00C60FE7 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		605D3DFC260B3B2E00C60FE7 /* PieChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartsView.swift; sourceTree = "<group>"; };
 		606764EA2605D3A3006A13EE /* ProtocolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 		606764EF2605DEEB006A13EE /* BsicDEmoGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BsicDEmoGeneric.swift; sourceTree = "<group>"; };
 		6073163626046BF900DA9616 /* GenericDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +116,6 @@
 		6073165B26046BFB00DA9616 /* GenericDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDemoUITests.swift; sourceTree = "<group>"; };
 		6073165D26046BFB00DA9616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6073166C26046D5100DA9616 /* Modifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifire.swift; sourceTree = "<group>"; };
-		607316742604787100DA9616 /* ModifireNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifireNew.swift; sourceTree = "<group>"; };
 		607316882604B50C00DA9616 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		6073168D2604B78900DA9616 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		607316982604C48000DA9616 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
@@ -118,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607316842604B4D100DA9616 /* Lottie in Frameworks */,
+				60250D80260B4B370093854A /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +170,46 @@
 			path = CustumTextView;
 			sourceTree = "<group>";
 		};
+		60250D7E260B4B370093854A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60250D8B260B4F800093854A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				60250D8C260B4F9E0093854A /* ButtonView.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		605D3DE5260B0AF600C60FE7 /* CustumScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				605D3DE6260B0B1F00C60FE7 /* CustomScrollViewNew.swift */,
+			);
+			path = CustumScrollView;
+			sourceTree = "<group>";
+		};
+		605D3DEE260B15E400C60FE7 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				605D3DEF260B160B00C60FE7 /* AlertController.swift */,
+			);
+			path = CustomAlert;
+			sourceTree = "<group>";
+		};
+		605D3DFB260B3A4C00C60FE7 /* ShapeView */ = {
+			isa = PBXGroup;
+			children = (
+				605D3DFC260B3B2E00C60FE7 /* PieChartsView.swift */,
+				60250D79260B3E5E0093854A /* RatingView.swift */,
+			);
+			path = ShapeView;
+			sourceTree = "<group>";
+		};
 		6073162D26046BF900DA9616 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +217,7 @@
 				6073164F26046BFB00DA9616 /* GenericDemoTests */,
 				6073165A26046BFB00DA9616 /* GenericDemoUITests */,
 				6073163726046BF900DA9616 /* Products */,
+				60250D7E260B4B370093854A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,17 +234,19 @@
 		6073163826046BF900DA9616 /* GenericDemo */ = {
 			isa = PBXGroup;
 			children = (
+				60250D8B260B4F800093854A /* Button */,
+				605D3DFB260B3A4C00C60FE7 /* ShapeView */,
+				605D3DEE260B15E400C60FE7 /* CustomAlert */,
+				605D3DE5260B0AF600C60FE7 /* CustumScrollView */,
 				6017BF5A260A121900966A32 /* CustumTextView */,
 				60CACCB12609DFA900A19603 /* CustumMapView */,
 				60CACCB02609DCB200A19603 /* LoderView */,
-				60CACCAF2609DC8300A19603 /* CusstumMapView */,
 				60CACCA82609CE4500A19603 /* CustumProfile */,
 				60CACCA72609CDE000A19603 /* CustumPicker */,
 				60CACCA62609CDBB00A19603 /* CustumSearch */,
 				6073163926046BF900DA9616 /* AppDelegate.swift */,
 				6073163B26046BF900DA9616 /* SceneDelegate.swift */,
 				6073166C26046D5100DA9616 /* Modifire.swift */,
-				607316742604787100DA9616 /* ModifireNew.swift */,
 				6073163D26046BF900DA9616 /* ContentView.swift */,
 				606764EA2605D3A3006A13EE /* ProtocolView.swift */,
 				602CDC412608B07F004B244F /* countries.json */,
@@ -256,13 +322,6 @@
 			path = CustumProfile;
 			sourceTree = "<group>";
 		};
-		60CACCAF2609DC8300A19603 /* CusstumMapView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CusstumMapView;
-			sourceTree = "<group>";
-		};
 		60CACCB02609DCB200A19603 /* LoderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +353,7 @@
 				6073163226046BF900DA9616 /* Sources */,
 				6073163326046BF900DA9616 /* Frameworks */,
 				6073163426046BF900DA9616 /* Resources */,
+				60250D83260B4B6C0093854A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +362,7 @@
 			name = GenericDemo;
 			packageProductDependencies = (
 				607316832604B4D100DA9616 /* Lottie */,
+				60250D7F260B4B370093854A /* Charts */,
 			);
 			productName = GenericDemo;
 			productReference = 6073163626046BF900DA9616 /* GenericDemo.app */;
@@ -376,6 +437,7 @@
 			mainGroup = 6073162D26046BF900DA9616;
 			packageReferences = (
 				607316822604B4D100DA9616 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				605D3DF7260B3A1F00C60FE7 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 6073163726046BF900DA9616 /* Products */;
 			projectDirPath = "";
@@ -429,7 +491,9 @@
 				607D4FA326088901007A2006 /* CustumPicker.swift in Sources */,
 				6017BF4B260A045200966A32 /* MainView.swift in Sources */,
 				607D4FC426089DFC007A2006 /* JsonStore.swift in Sources */,
+				60250D7A260B3E5E0093854A /* RatingView.swift in Sources */,
 				606764EB2605D3A3006A13EE /* ProtocolView.swift in Sources */,
+				605D3DF0260B160B00C60FE7 /* AlertController.swift in Sources */,
 				601E1BD22608CA01009E063A /* ActivityViewController.swift in Sources */,
 				607316A32604C78F00DA9616 /* ListHeader.swift in Sources */,
 				607D4FA826088B85007A2006 /* custumPickerView.swift in Sources */,
@@ -439,12 +503,12 @@
 				6073166D26046D5100DA9616 /* Modifire.swift in Sources */,
 				60CACCB32609DFD300A19603 /* MapView.swift in Sources */,
 				601E1BD72608CE64009E063A /* BlurView.swift in Sources */,
+				605D3DFD260B3B2E00C60FE7 /* PieChartsView.swift in Sources */,
 				602CDC4A2608B799004B244F /* Profile.swift in Sources */,
 				607D4FC926089F90007A2006 /* CountryViewModel.swift in Sources */,
 				60CACCC92609EC9A00A19603 /* MapviewCoordinate.swift in Sources */,
 				606764F02605DEEB006A13EE /* BsicDEmoGeneric.swift in Sources */,
 				607D4FB02608984F007A2006 /* NewPickerwithCustom.swift in Sources */,
-				607316752604787100DA9616 /* ModifireNew.swift in Sources */,
 				6073163A26046BF900DA9616 /* AppDelegate.swift in Sources */,
 				6017BF5C260A123C00966A32 /* CustumTextViewClass.swift in Sources */,
 				6073163C26046BF900DA9616 /* SceneDelegate.swift in Sources */,
@@ -452,6 +516,8 @@
 				6073168E2604B78900DA9616 /* LoadingView.swift in Sources */,
 				602CDC4F2608B94A004B244F /* CustumPofileImage.swift in Sources */,
 				607D4FBF26089D7C007A2006 /* Country.swift in Sources */,
+				60250D8D260B4F9E0093854A /* ButtonView.swift in Sources */,
+				605D3DE7260B0B1F00C60FE7 /* CustomScrollViewNew.swift in Sources */,
 				607316892604B50C00DA9616 /* LottieView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -785,6 +851,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		605D3DF7260B3A1F00C60FE7 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		607316822604B4D100DA9616 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -796,6 +870,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		60250D7F260B4B370093854A /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 605D3DF7260B3A1F00C60FE7 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
 		607316832604B4D100DA9616 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 607316822604B4D100DA9616 /* XCRemoteSwiftPackageReference "lottie-ios" */;
