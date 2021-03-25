@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//import Charts
 
 
 func add<T: Summable>(x: T, y: T) -> T{
@@ -43,46 +44,10 @@ func find<T: Equatable>(item:T, inArray:[T]) -> Int?
     {
         return nil
     }
-    
-    
-    
-    
-    
+   
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//func mid<T: Comparable>(array: [T]) -> T? {
-//    guard !array.isEmpty else { return nil }
-//    return array.sorted()[(array.count - 1) / 2]
-//
-//
-//
-//}
 
 func mid<T: Comparable>(array: [T]) -> T? {
   guard !array.isEmpty else { return nil }

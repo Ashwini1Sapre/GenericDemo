@@ -27,17 +27,13 @@ init(title: String?,
             LandmarkAnnotation(title:"Welcome",
                                subtitle: "tap to pin",
                                coordinate: .init(latitude: 19.0760, longitude: 72.8777))
-            
-          
+        
         
         ]
         
-        
-        
+       
     }
-    
-    
-    
+ 
     
 }
 

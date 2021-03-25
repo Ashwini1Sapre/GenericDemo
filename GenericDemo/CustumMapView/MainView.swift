@@ -10,12 +10,22 @@ import SwiftUI
 struct MainView: View {
     @State var text = ""
     @State var ShowAlet: Bool
+  //  @State var textstr: String = ""
+//    @State var textalert: Bool = true
+    @State var textstr: String = ""
+    @State var alertstr: Bool = true
+    @State var rating: Int?
+
     
     var body: some View {
         VStack
         {
           
             
+            
+            
+//            AlertController(textString: $textstr, showAlert: $alertstr, title: "Welcome", message: "This is custom alert")
+//
             MapViewNew(showingAlert: $ShowAlet)
                 .alert(isPresented: $ShowAlet) { () -> Alert in
                     
@@ -23,6 +33,22 @@ struct MainView: View {
                     
                     
                 }
+            
+            HStack{
+            RatingView(rating: $rating,maximumRating: 5)
+                Text(rating != nil ? "Your rating: \(rating!)" : "")
+                
+              
+        
+            }
+            
+            //Apply custom alert
+           
+           
+            
+            
+        //    }
+            
             
         }
     }
