@@ -15,12 +15,17 @@ struct RatingView: View {
     var onImage = Image(systemName: "star")
     var offColor = Color.gray
     var onColor = Color.yellow
-    
+    @State var selectedSector = ""
+    @State var fundsSectors = [SectorCustomModel(sector: "media", fundsize: 30.0),
+                               SectorCustomModel(sector: "education", fundsize: 40.0),
+                               SectorCustomModel(sector: "mask", fundsize: 20.0)
+                               
+    ]
     
     
     var body: some View {
        
-        
+       
         
         HStack{
             
@@ -43,9 +48,17 @@ struct RatingView: View {
                     }
              
             }
-          
+            VStack {
+            PieChartsView1(sectors: fundsSectors, sectorLabel: $selectedSector)
+            
+            BarChartView1(plotPoints: [330,500,800,200,300])
+                let dataShowarr = [DataPoints(xVal: "29", yVal: 120.30),DataPoints(xVal: "", yVal: 189.20)]
+             //   LineChartView1(plotPoints: dataShowarr, color: "red", tapIndex: .constant(0), xpos: .constant(0.0), ypos: .constant(0.0))
+                
+            }
             
         }
+       
         
         
         
@@ -76,7 +89,10 @@ struct RatingView: View {
 }
 
 struct RatingView_Previews: PreviewProvider {
+    @State var rating: Int?
+
     static var previews: some View {
+        
         RatingView(rating: .constant(4))
     }
 }

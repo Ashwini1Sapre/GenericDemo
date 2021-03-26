@@ -29,7 +29,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //let contentView = ButtonView()
        // let contentView =  CustomScrollViewNew<Content: View>()
        // let contentView = ButtonActionView()
-        let contentView = GridViewHeaderView()
+      //  let contentView = GridViewHeaderView()
+        let contentView = RatingView(rating: .constant(4))
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
